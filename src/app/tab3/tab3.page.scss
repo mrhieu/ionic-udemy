@@ -1,0 +1,13 @@
+.course-thumbnail {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.course-progress {
+  margin: 8px 0 0;
+  color: var(--ion-color-medium);
+
+  ion-progress-bar {
+    margin-bottom: 4px;
+  }
+}

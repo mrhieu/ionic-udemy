@@ -1,16 +1,86 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-searchbar placeholder="Search"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="ion-padding message-hint ion-text-center">
+    <h3><strong><ion-text color="secondary">Discover Courses</ion-text></strong></h3>
+    <p class="text-muted">
+      Try discovering new courses with search or browse our categories
+    </p>
+  </div>
+
+  <div class="ion-padding">
+    <ion-list-header class="list-header-custom no-padding">
+      <ion-label>
+        Top searches
+      </ion-label>
+    </ion-list-header>
+    <div>
+      <ion-chip color="medium">
+        <ion-label>Python</ion-label>
+      </ion-chip>
+      <ion-chip color="medium">
+        <ion-label>Javascript</ion-label>
+      </ion-chip>
+      <ion-chip color="medium">
+        <ion-label>Excel</ion-label>
+      </ion-chip>
+      <ion-chip color="medium">
+        <ion-label>AWS</ion-label>
+      </ion-chip>
+      <ion-chip color="medium">
+        <ion-label>Photoshop</ion-label>
+      </ion-chip>
+      <ion-chip color="medium">
+        <ion-label>Wordpress</ion-label>
+      </ion-chip>
+      <ion-chip color="medium">
+        <ion-label>C#</ion-label>
+      </ion-chip>
+    </div>
+  </div>
+
+  <ion-list>
+    <ion-list-header class="list-header-custom">
+      <ion-label>
+        Browse categories
+      </ion-label>
+    </ion-list-header>
+    <ion-item lines="none" detail>
+      <ion-icon name="stats-chart" slot="start" color="medium" size="small"></ion-icon>
+      <ion-label>Business</ion-label>
+    </ion-item>
+    <ion-item lines="none" detail>
+      <ion-icon name="brush" slot="start" color="medium" size="small"></ion-icon>
+      <ion-label>Design</ion-label>
+    </ion-item>
+    <ion-item lines="none" detail>
+      <ion-icon name="card-outline" slot="start" color="medium" size="small"></ion-icon>
+      <ion-label>Finance & Accounting</ion-label>
+    </ion-item>
+    <ion-item lines="none" detail>
+      <ion-icon name="code-slash" slot="start" color="medium" size="small"></ion-icon>
+      <ion-label>Development</ion-label>
+    </ion-item>
+    <ion-item lines="none" detail>
+      <ion-icon name="game-controller-outline" slot="start" color="medium" size="small"></ion-icon>
+      <ion-label>IT & Software</ion-label>
+    </ion-item>
+    <ion-item lines="none" detail>
+      <ion-icon name="calculator-outline" slot="start" color="medium" size="small"></ion-icon>
+      <ion-label>Office Productivity</ion-label>
+    </ion-item>
+    <ion-item lines="none" detail>
+      <ion-icon name="body-outline" slot="start" color="medium" size="small"></ion-icon>
+      <ion-label>Personal Development</ion-label>
+    </ion-item>
+    <ion-item lines="none" detail>
+      <ion-icon name="pie-chart-outline" slot="start" color="medium" size="small"></ion-icon>
+      <ion-label>Marketing</ion-label>
+    </ion-item>
+  </ion-list>
 
 </ion-content>

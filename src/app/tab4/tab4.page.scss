@@ -1,0 +1,23 @@
+.course-thumbnail {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 13px;
+  color: var(--ion-color-medium);
+}
+
+.price {
+  font-size: 20px;
+
+  .price-old {
+    color: var(--ion-color-medium);
+    font-size: 13px;
+    display: inline-block;
+    text-decoration: line-through;
+  }
+}

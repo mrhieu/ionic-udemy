@@ -1,9 +1,36 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>tab4</ion-title>
+    <ion-title color="primary">Wishlist</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-list class="ion-padding-top">
+    <ion-item lines="none" *ngFor="let i of [1,2,3]">
+      <ion-thumbnail slot="start" class="course-thumbnail">
+        <img src="assets/img/img_{{i%4 + 1}}.png" alt="">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <h2><strong>Build a Business from scratch with no funding</strong></h2>
+        <div class="text-sm text-muted">
+          Tony Stark, Steve Roger
+        </div>
+        <div class="rating">
+          <div class="stars">
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star-half" color="warning"></ion-icon>
+          </div>
+          <div><strong>4.4</strong></div>
+          <div>(102,864)</div>
+        </div>
+        <div class="price">
+          $10.99
+          <div class="price-old">$169.99</div>
+        </div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

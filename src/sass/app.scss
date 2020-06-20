@@ -4,7 +4,10 @@
 
 .list-header-custom {
   font-size: 17px;
-  padding-left: 0;
+
+  &.no-padding {
+    padding-left: 0;
+  }
 }
 
 .text-sm {

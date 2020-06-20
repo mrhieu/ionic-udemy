@@ -1,16 +1,32 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title color="primary">My courses</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="filter"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content>
+  <ion-list class="ion-padding-top">
+    <ion-item lines="none" *ngFor="let i of [1,2,3,4,5,6,7,8]">
+      <ion-thumbnail slot="start" class="course-thumbnail">
+        <img src="assets/img/img_{{i%4 + 1}}.png" alt="">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <h2><strong>User Experience Design Fundamentals</strong></h2>
+        <p>Peter Parker</p>
+        <div class="course-progress">
+          <ion-progress-bar value="0.8" color="secondary"></ion-progress-bar>
+          <p>80% completed</p>
+        </div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
