@@ -1,17 +1,111 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border">
+  <ion-toolbar class="toolbar-transparent"></ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <div class="featured-banner bg-image" [style.backgroundImage]="'url(assets/img/img_2.png)'">
+    <div class="card-caption">
+      <div class="banner-title">Look forward <ion-icon name="chevron-forward"></ion-icon></div>
+      <div>Skills for your tomorrow up to 60% off</div>
+    </div>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="promo-banner">
+    <div>
+      Courses up to 60% off | Last day!
+    </div>
+    <strong>Ends in 14h 7m 0s</strong>
+  </div>
+
+  <div class="featured-courses">
+    <ion-list-header class="list-header-custom">
+      <ion-label>
+        Featured
+      </ion-label>
+      <ion-button fill="clear" size="small" color="dark">
+      	SEE ALL
+      </ion-button>
+    </ion-list-header>
+    <div class="scroll-horizontal">
+      <div class="scroll-item" *ngFor="let i of [1,2,3]">
+        <div class="course-item">
+          <div class="bg-image" [style.backgroundImage]="'url(assets/img/img_' + i + '.png)'"></div>
+          <div>
+            <strong>The Complete Digital Marketing Course - 12 Courses in 1</strong>
+          </div>
+          <div class="text-sm text-muted">
+            Tony Stark, Steve Roger
+          </div>
+          <div class="rating">
+            <div class="stars">
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-icon name="star-half" color="warning"></ion-icon>
+            </div>
+            <div><strong>4.4</strong></div>
+            <div>(102,864)</div>
+          </div>
+          <div class="price">
+            $10.99
+            <div class="price-old">$169.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured-courses">
+    <ion-list-header class="list-header-custom">
+      <ion-label>
+        Categories
+      </ion-label>
+      <ion-button fill="clear" size="small" color="dark">
+      	SEE ALL
+      </ion-button>
+    </ion-list-header>
+    <div>
+      <ion-chip *ngFor="let i of [1,2,3,4,5,6]" color="medium">
+        <ion-icon name="stats-chart" color="medium"></ion-icon>
+        <ion-label>Business</ion-label>
+      </ion-chip>
+    </div>
+  </div>
+
+  <div class="featured-courses">
+    <ion-list-header class="list-header-custom">
+      <ion-label>
+        Newest courses in <ion-text color="secondary">English Language</ion-text>
+      </ion-label>
+    </ion-list-header>
+    <div class="scroll-horizontal">
+      <div class="scroll-item" *ngFor="let i of [1,2,3,4]">
+        <div class="course-item course-item-sm">
+          <div class="bg-image" [style.backgroundImage]="'url(assets/img/img_' + i + '.png)'"></div>
+          <div>
+            <strong>The Complete Digital Marketing Course - 12 Courses in 1</strong>
+          </div>
+          <div class="text-sm text-muted">
+            Tony Stark, Steve Roger
+          </div>
+          <div class="rating">
+            <div class="stars">
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-icon name="star" color="warning"></ion-icon>
+              <ion-icon name="star-half" color="warning"></ion-icon>
+            </div>
+            <div><strong>4.4</strong></div>
+            <div>(102,864)</div>
+          </div>
+          <div class="price">
+            $10.99
+            <div class="price-old">$169.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>
