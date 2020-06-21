@@ -1,0 +1,86 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="ion-text-wrap toolbar-transparent"></ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="top" horizontal="start" slot="fixed" class="close-button">
+    <ion-fab-button size="small" (click)="closeModal()">
+      <ion-icon name="chevron-down"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <div class="video-player bg-image" [style.backgroundImage]="'url(assets/img/img_2.png)'">
+    <div class="overlay-text">
+      <ion-icon name="play-sharp" class="play-button"></ion-icon>
+    </div>
+  </div>
+
+  <div class="ion-padding-start ion-padding-end">
+    <h3>
+      User Experience Introduction 1
+    </h3>
+    <p class="text-sm text-muted">Tony Stark</p>
+  </div>
+
+  <ion-list>
+    <ion-list-header class="list-header-custom">
+      <ion-label>
+        Section 1 - Introduction
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item lines="none" *ngFor="let i of [1,2,3,4,5]">
+      <div class="video-index" slot="start">
+        <ion-text [color]="i === 1 ? 'primary' : ''">{{i}}</ion-text>
+      </div>
+      <ion-label>
+        <h2>
+          <ion-icon name="checkmark-circle" color="secondary" size="small"></ion-icon>
+          <ion-text [color]="i === 1 ? 'primary' : ''">User Experience Introduction {{i}}</ion-text>
+        </h2>
+        <p>Video - 04:21 mins remaining</p>
+      </ion-label>
+      <ion-icon name="arrow-down-circle-outline" slot="end" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-list-header class="list-header-custom">
+      <ion-label>
+        Section 2 - Dive into UX Design
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item lines="none" *ngFor="let i of [1,2,3,4,5]">
+      <div class="video-index" slot="start">
+        <ion-text>{{i}}</ion-text>
+      </div>
+      <ion-label>
+        <h2>
+          <ion-icon name="checkmark-circle" color="secondary" size="small"></ion-icon>
+          <ion-text>The Elements of User Experience {{i}}</ion-text>
+        </h2>
+        <p>Video - 04:21 mins remaining</p>
+      </ion-label>
+      <ion-icon name="arrow-down-circle-outline" slot="end" color="medium"></ion-icon>
+    </ion-item>
+
+    <ion-list-header class="list-header-custom">
+      <ion-label>
+        Section 3 - User Research
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item lines="none" *ngFor="let i of [1,2,3,4,5]">
+      <div class="video-index" slot="start">
+        <ion-text>{{i}}</ion-text>
+      </div>
+      <ion-label>
+        <h2>
+          <ion-icon name="checkmark-circle" color="secondary" size="small"></ion-icon>
+          <ion-text>User Research {{i}}</ion-text>
+        </h2>
+        <p>Video - 04:21 mins remaining</p>
+      </ion-label>
+      <ion-icon name="arrow-down-circle-outline" slot="end" color="medium"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

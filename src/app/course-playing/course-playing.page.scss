@@ -1,0 +1,44 @@
+.video-player {
+  margin: 0 auto;
+  height: 0;
+  padding-top: 56.25%; // 16:9 ratio
+  position: relative;
+
+  .overlay-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.2);
+  }
+
+  ion-icon {
+    font-size: 60px;
+    color: #fff;
+  }
+}
+
+.list-header-custom {
+  font-size: 13px;
+  color: var(--ion-color-medium);
+}
+
+ion-icon {
+  vertical-align: middle;
+
+  & + ion-text {
+    margin-left: 4px;
+  }
+}
+
+.close-button {
+  ion-fab-button {
+    --background: rgba(0, 0, 0, .25);
+    --padding-start: 8px;
+    --padding-end: 8px;
+  }
+}

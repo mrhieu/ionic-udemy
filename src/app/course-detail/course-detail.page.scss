@@ -1,0 +1,74 @@
+.cover-background {
+  --top: calc(var(--ion-safe-area-top) + var(--offset-top));
+  color: #fff;
+  height: auto;
+  position: relative;
+  top: calc(-1 * var(--top));
+  margin-bottom: calc(-1 * var(--top) + 80px);
+  padding-top: var(--top);
+  padding-bottom: 96px;
+}
+.course-title-lg {
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+ion-badge {
+  padding: 9px 14px;
+  vertical-align: middle;
+}
+
+.video-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  transform: translate(-50%, 0);
+}
+
+.video-thumbnail {
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 300px;
+  height: 160px;
+  position: relative;
+
+  .overlay-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ion-icon {
+    font-size: 60px;
+    color: #fff;
+  }
+}
+
+ion-icon {
+  vertical-align: middle;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 700;
+
+  .price-old {
+    font-weight: 400;
+    color: var(--ion-color-medium);
+    font-size: 0.6em;
+    display: inline-block;
+    text-decoration: line-through;
+  }
+}
+
+ion-card {
+  box-shadow: none;
+  border-radius: 4px;
+  margin-top: 0;
+  --color: var(--ion-text-color);
+}
